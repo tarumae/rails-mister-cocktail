@@ -11,6 +11,10 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-light cocktail">
+      <%= link_to ".shaker", cocktails_path, class: "navbar-brand letterspacing" %>
+      <%= link_to "+", new_cocktail_path, class: "btn btn-primary rounded-circle" %>
+    </nav>
     <%= yield %>
   </body>
 </html>

@@ -1,3 +1,12 @@
 // Place all the styles related to the Cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+body {
+  background-color: rgba($color: #6cffe6, $alpha: 0.5);
+  color: rgba(0,0,0,0.5);
+}
+
+.letterspacing {
+  letter-spacing: 5px;
+}
