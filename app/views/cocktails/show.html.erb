@@ -1,4 +1,9 @@
 <div class="container">
+  <% if @cocktail.photo.attached? %> 
+    <%= cl_image_tag(@cocktail.photo.key, width: 400, height: 300, crop: :fill) %>
+  <% else %>
+    <img src="https://placekitten.com/g/300/200" alt="">
+  <% end %>
   <h1><%= @cocktail.name %></h1>
   <%= link_to "+ Ingredient", new_cocktail_dose_path(@cocktail) %>
   <h2>Ingredients: </h2>
@@ -8,3 +13,4 @@
     <% end %>
   </ul>
 </div>
+
