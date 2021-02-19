@@ -1,9 +1,9 @@
+<div class="container">
 <% if @cocktail.photo.attached? %>
   <div class="banner" style='background-image: url("<%= cl_image_path(@cocktail.photo.key, width: 400, height: 300, crop: :fill) %>")'></div>
 <% else %>
   <div class="banner" style='background-image: url("https://placekitten.com/g/300/200")'></div>
 <% end %>
-<div class="container">
   <div class="row flex">
     <div class="cocktail-name">
       <h1 class="nagative-title-margin"><%= @cocktail.name %></h1>
