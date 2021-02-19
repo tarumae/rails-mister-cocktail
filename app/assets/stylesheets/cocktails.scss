@@ -24,10 +24,27 @@ body {
 .cocktail-ingredients {
   margin-right: 0px;
   margin-top: 30px;
+  ul {
+    list-style: none;
+    font-family: 'Tangerine', cursive;
+    letter-spacing: 2px;
+  }
+  h2 {
+    font-family: 'Tangerine', cursive;
+    font-size: 3em;
+    font-weight: bold;
+  }
+  li {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
 }
 
+
+
+
 .cocktail-ingredients ul {
-  list-style: none;
+
 }
 
 .delete {
@@ -61,4 +78,7 @@ body {
   background-color:#9affee;
   border-radius: 5px;
   padding: 0 30px;
+  font-family: 'Tangerine', cursive;
+  letter-spacing: 2px;
+  font-size: 4em;
 }
